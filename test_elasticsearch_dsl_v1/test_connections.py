@@ -1,6 +1,6 @@
 from elasticsearch import Elasticsearch
 
-from elasticsearch_dsl import connections, serializer
+from elasticsearch_dsl_v1 import connections, serializer
 
 from pytest import raises
 

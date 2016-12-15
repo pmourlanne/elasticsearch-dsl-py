@@ -1,4 +1,4 @@
-from elasticsearch_dsl import Search, DocType, Date, String, MultiSearch
+from elasticsearch_dsl_v1 import Search, DocType, Date, String, MultiSearch
 
 from .test_data import DATA
 

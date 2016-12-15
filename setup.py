@@ -27,8 +27,9 @@ tests_require = [
 if sys.version_info[:2] == (2, 6):
     tests_require.append('unittest2')
 
+
 setup(
-    name = "elasticsearch-dsl",
+    name = "elasticsearch-dsl-v1",
     description = "Python client for Elasticsearch",
     license="Apache License, Version 2.0",
     url = "https://github.com/elasticsearch/elasticsearch-dsl-py",
@@ -38,7 +39,7 @@ setup(
     author_email = "honza.kral@gmail.com",
     packages=find_packages(
         where='.',
-        exclude=('test_elasticsearch_dsl*', )
+        exclude=('test_elasticsearch_dsl_v1*', )
     ),
     classifiers = [
         "Development Status :: 4 - Beta",
@@ -58,6 +59,6 @@ setup(
     ],
     install_requires=install_requires,
 
-    test_suite = "test_elasticsearch_dsl.run_tests.run_all",
+    test_suite = "test_elasticsearch_dsl_v1.run_tests.run_all",
     tests_require=tests_require,
 )

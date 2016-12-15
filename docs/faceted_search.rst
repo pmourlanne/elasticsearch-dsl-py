@@ -101,7 +101,7 @@ Example
 
     from datetime import date
 
-    from elasticsearch_dsl import FacetedSearch, TermsFacet, DateHistogramFacet
+    from elasticsearch_dsl_v1 import FacetedSearch, TermsFacet, DateHistogramFacet
 
     class BlogSearch(FacetedSearch):
         doc_types = [Article, ]

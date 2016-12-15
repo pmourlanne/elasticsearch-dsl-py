@@ -1,4 +1,4 @@
-from elasticsearch_dsl import aggs, filter
+from elasticsearch_dsl_v1 import aggs, filter
 
 from pytest import raises
 

@@ -1,6 +1,6 @@
 from pytest import raises
 
-from elasticsearch_dsl import result
+from elasticsearch_dsl_v1 import result
 
 def test_attribute_error_in_hits_is_not_hidden(dummy_response):
     def f(hit):

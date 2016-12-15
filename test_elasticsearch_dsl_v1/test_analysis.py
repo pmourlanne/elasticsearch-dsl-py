@@ -1,5 +1,5 @@
 # coding: utf-8
-from elasticsearch_dsl import analysis
+from elasticsearch_dsl_v1 import analysis
 
 def test_analyzer_serializes_as_name():
     a = analysis.Analyzer('my_analyzer')

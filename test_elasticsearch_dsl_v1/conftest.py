@@ -15,7 +15,7 @@ _client_loaded = False
 @fixture(scope='session')
 def client(request):
     # inner import to avoid throwing off coverage
-    from elasticsearch_dsl.connections import connections
+    from elasticsearch_dsl_v1.connections import connections
     # hack to workaround pytest not caching skip on fixtures (#467)
     global _client_loaded
     if _client_loaded:
@@ -37,7 +37,7 @@ def write_client(request, client):
 @yield_fixture
 def mock_client(request):
     # inner import to avoid throwing off coverage
-    from elasticsearch_dsl.connections import connections
+    from elasticsearch_dsl_v1.connections import connections
     client = Mock()
     client.search.return_value = dummy_response()
     connections.add_connection('mock', client)

@@ -1,4 +1,4 @@
-from elasticsearch_dsl import query, function, filter
+from elasticsearch_dsl_v1 import query, function, filter
 
 from pytest import raises
 

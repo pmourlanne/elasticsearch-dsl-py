@@ -1,4 +1,4 @@
-from elasticsearch_dsl.search import Search
+from elasticsearch_dsl_v1.search import Search
 
 def test_search_can_be_limited_to_fields(data_client):
     s = Search(using=data_client).index('git').doc_type('repos').fields('organization')

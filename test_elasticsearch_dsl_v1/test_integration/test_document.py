@@ -3,8 +3,8 @@ from pytz import timezone
 
 from elasticsearch import ConflictError, NotFoundError
 
-from elasticsearch_dsl import DocType, Date, String, construct_field, Mapping
-from elasticsearch_dsl.utils import AttrList
+from elasticsearch_dsl_v1 import DocType, Date, String, construct_field, Mapping
+from elasticsearch_dsl_v1.utils import AttrList
 
 from pytest import raises
 

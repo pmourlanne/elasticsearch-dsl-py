@@ -1,4 +1,4 @@
-from elasticsearch_dsl import filter, Q
+from elasticsearch_dsl_v1 import filter, Q
 
 from pytest import raises
 

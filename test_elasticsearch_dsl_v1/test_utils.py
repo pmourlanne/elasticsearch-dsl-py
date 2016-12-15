@@ -1,4 +1,4 @@
-from elasticsearch_dsl import utils, serializer
+from elasticsearch_dsl_v1 import utils, serializer
 
 def test_merge():
     a = {'a': {'b': 42, 'c': 47}}

@@ -2,8 +2,8 @@ import pickle
 from hashlib import md5
 from datetime import datetime
 
-from elasticsearch_dsl import document, field, Mapping
-from elasticsearch_dsl.exceptions import ValidationException
+from elasticsearch_dsl_v1 import document, field, Mapping
+from elasticsearch_dsl_v1.exceptions import ValidationException
 
 from pytest import raises
 

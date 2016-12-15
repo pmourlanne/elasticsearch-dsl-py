@@ -1,6 +1,6 @@
 from copy import deepcopy
 
-from elasticsearch_dsl import search, query, F, Q, DocType, utils
+from elasticsearch_dsl_v1 import search, query, F, Q, DocType, utils
 
 
 def test_execute_uses_cache():

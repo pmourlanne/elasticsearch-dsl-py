@@ -94,7 +94,7 @@ Let's rewrite the example using the Python DSL:
 .. code:: python
 
     from elasticsearch import Elasticsearch
-    from elasticsearch_dsl import Search, Q
+    from elasticsearch_dsl_v1 import Search, Q
 
     client = Elasticsearch()
 
@@ -135,8 +135,8 @@ Let's have a simple Python class representing an article in a blogging system:
 .. code:: python
 
     from datetime import datetime
-    from elasticsearch_dsl import DocType, String, Date, Integer
-    from elasticsearch_dsl.connections import connections
+    from elasticsearch_dsl_v1 import DocType, String, Date, Integer
+    from elasticsearch_dsl_v1.connections import connections
 
     # Define a default Elasticsearch client
     connections.create_connection(hosts=['localhost'])
@@ -206,8 +206,8 @@ search class to simplify searching and filtering.
 
 .. code:: python
 
-    from elasticsearch_dsl import FacetedSearch
-    from elasticsearch_dsl.aggs import Terms, DateHistogram
+    from elasticsearch_dsl_v1 import FacetedSearch
+    from elasticsearch_dsl_v1.aggs import Terms, DateHistogram
 
     class BlogSearch(FacetedSearch):
         doc_types = [Article, ]

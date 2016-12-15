@@ -175,7 +175,7 @@ class Request(object):
         will be returned with current instance remaining unchanged.
 
         :arg client: an instance of ``elasticsearch.Elasticsearch`` to use or
-            an alias to look up in ``elasticsearch_dsl.connections``
+            an alias to look up in ``elasticsearch_dsl_v1.connections``
 
         """
         s = self._clone()

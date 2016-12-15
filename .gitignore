@@ -8,6 +8,6 @@ build
 *.egg
 coverage.xml
 junit.xml
-test_elasticsearch_dsl/htmlcov
+test_elasticsearch_dsl_v1/htmlcov
 docs/_build
 .cache

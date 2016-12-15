@@ -1,4 +1,4 @@
-from elasticsearch_dsl import DocType, Index, String, Date
+from elasticsearch_dsl_v1 import DocType, Index, String, Date
 
 from random import choice
 
